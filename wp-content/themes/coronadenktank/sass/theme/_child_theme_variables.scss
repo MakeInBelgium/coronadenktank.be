@@ -6,8 +6,18 @@
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
 
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1440px
+) !default;
+
+$modal-xl:                    1440px !default;
+
 //
 // Color system
 //
 
-$primary: #7C008C;
+$primary: #7242E0;
+$font-family-base:            upgrade, sans-serif !default;

@@ -23,6 +23,11 @@ function coronadenktank_gutenberg_color_palette() {
         'name'  => esc_html__( 'Portica', 'coronadenktank' ),
         'slug' => 'portica',
         'color' => '#F6F061',
+      ),
+      array(
+        'name'  => esc_html__( 'Catskill White', 'coronadenktank' ),
+        'slug' => 'catskill-white',
+        'color' => '#F1F3F8',
       )
     )
   );

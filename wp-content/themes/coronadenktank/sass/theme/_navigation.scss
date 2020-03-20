@@ -1,4 +1,15 @@
 
+.navbar-brand {
+  font-size: 1.875rem;
+  img.img-fluid {
+    width: 70px;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 1.75rem;
+}
+
 .main-menu {
   font-size: 1.375rem;
   background-color: $corona-primary-light;
@@ -17,4 +28,8 @@
   .active a {
     color: $corona-yellow;
   }
+}
+
+nav a:hover {
+  text-decoration: underline;
 }

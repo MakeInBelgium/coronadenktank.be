@@ -1,0 +1,31 @@
+#page-wrapper {
+  //padding-top: 30px;
+  padding-top: 0;
+  .entry-header {
+    padding-top: 30px;
+    .entry-title {
+      font-size: 5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.section-highlighted {
+  padding-bottom: 96px;
+  position: relative;
+
+  .background-image {
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+  }
+
+  color: $corona-white;
+  a {
+    color: $corona-yellow;
+  }
+}

@@ -12,6 +12,10 @@
  Text Domain:  coronadenktank
  Tags:         grid-layout
 */
+/*
+AVAILABLE FONTS:
+
+ */
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -67,7 +71,7 @@ body {
   margin: 0;
   font-family: upgrade, sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -372,7 +376,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 400; }
+  font-weight: 300; }
 
 mark,
 .mark {
@@ -1626,7 +1630,7 @@ pre {
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
@@ -2511,7 +2515,7 @@ textarea.form-control,
 .btn,
 .wpcf7 input[type=submit] {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   color: #212529;
   text-align: center;
   vertical-align: middle;
@@ -2940,7 +2944,7 @@ fieldset:disabled a.btn {
               box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-link {
-  font-weight: 400;
+  font-weight: 300;
   color: #7242E0;
   text-decoration: none; }
   .btn-link:hover {
@@ -3170,7 +3174,7 @@ input[type="button"].btn-block {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 400;
+  font-weight: 300;
   color: #212529;
   text-align: inherit;
   white-space: nowrap;
@@ -3951,7 +3955,7 @@ input[type="button"].btn-block {
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #495057;
   text-align: center;
@@ -4215,7 +4219,7 @@ input[type="button"].btn-block {
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #495057;
   vertical-align: middle;
@@ -4291,7 +4295,7 @@ input[type="button"].btn-block {
   z-index: 1;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
@@ -5970,7 +5974,7 @@ a.close.disabled {
   margin: 0;
   font-family: upgrade, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -6055,7 +6059,7 @@ a.close.disabled {
   max-width: 276px;
   font-family: upgrade, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -9034,7 +9038,7 @@ button.bg-dark:focus {
   font-weight: lighter !important; }
 
 .font-weight-normal {
-  font-weight: 400 !important; }
+  font-weight: 300 !important; }
 
 .font-weight-bold {
   font-weight: 700 !important; }
@@ -9249,7 +9253,7 @@ a.skip-link {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 400;
+  font-weight: 300;
   color: #212529 !important;
   text-align: inherit;
   white-space: nowrap;
@@ -9278,7 +9282,7 @@ a.skip-link {
     color: #fff; }
 
 .navbar h1 {
-  font-weight: 400; }
+  font-weight: 300; }
 
 .woocommerce-input-wrapper {
   width: 100%; }
@@ -11625,6 +11629,64 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
+#page-wrapper {
+  padding-top: 0; }
+  #page-wrapper .entry-header {
+    padding-top: 30px; }
+    #page-wrapper .entry-header .entry-title {
+      font-size: 5rem;
+      font-weight: 600; }
+
+.section-highlighted {
+  padding-bottom: 96px;
+  position: relative;
+  color: #FFFFFF; }
+  .section-highlighted .background-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1; }
+  .section-highlighted a {
+    color: #F6F061; }
+
+.navbar-brand {
+  font-size: 1.875rem; }
+  .navbar-brand img.img-fluid {
+    width: 70px; }
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 1.75rem;
+  color: #FFFFFF; }
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: #F6F061; }
+
+.main-menu {
+  font-size: 1.375rem;
+  background-color: #8064D5; }
+  .main-menu .nav-link:first-child {
+    text-align: left;
+    padding-left: 0; }
+  .main-menu .nav-link:last-child {
+    text-align: right;
+    padding-right: 0; }
+  .main-menu a {
+    color: #FFFFFF; }
+  .main-menu .active a {
+    color: #F6F061; }
+
+.nav-link:focus, .nav-link:hover,
+nav a:hover {
+  text-decoration: underline; }
+
+.slack-link {
+  white-space: nowrap; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
@@ -11648,11 +11710,5 @@ figure.woocommerce-product-gallery__wrapper {
   .wpcf7 .wpcf7-validation-errors {
     color: #dc3545;
     border: 1px solid #e9ecef; }
-
-.navbar-brand {
-  font-size: 1.875rem; }
-
-.navbar-dark .navbar-nav .nav-link {
-  font-size: 1.75rem; }
 
 /*# sourceMappingURL=style.css.map */

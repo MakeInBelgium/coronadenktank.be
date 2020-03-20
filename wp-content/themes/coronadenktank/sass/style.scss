@@ -23,14 +23,5 @@
 
 // Any additional imported files //
 @import "theme/child_theme";                             // <------- Add your styles into this file
+@import "theme/navigation";                             // <------- Add your styles into this file
 @import "../src/sass/understrap/theme/contact-form7";    // <------- Loads some basic styling for contact form 7 plugin
-
-
-.navbar-brand {
-  font-size: 1.875rem;
-}
-
-
-.navbar-dark .navbar-nav .nav-link {
-  font-size: 1.75rem;
-}

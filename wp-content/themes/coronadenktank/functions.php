@@ -38,3 +38,5 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 require_once(get_stylesheet_directory()."/functions/b35-disable-comments.php");
 require_once(get_stylesheet_directory()."/functions/b35-menus.php");
 require_once(get_stylesheet_directory()."/functions/b35-disable-author-pages.php");
+require_once(get_stylesheet_directory()."/functions/b35-footer.php");
+require_once(get_stylesheet_directory()."/functions/b35-gutenberg-colors.php");

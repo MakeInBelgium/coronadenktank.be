@@ -11631,7 +11631,11 @@ figure.woocommerce-product-gallery__wrapper {
     width: 70px; }
 
 .navbar-dark .navbar-nav .nav-link {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  color: #FFFFFF; }
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: #F6F061; }
 
 .main-menu {
   font-size: 1.375rem;
@@ -11647,8 +11651,12 @@ figure.woocommerce-product-gallery__wrapper {
   .main-menu .active a {
     color: #F6F061; }
 
+.nav-link:focus, .nav-link:hover,
 nav a:hover {
   text-decoration: underline; }
+
+.slack-link {
+  white-space: nowrap; }
 
 /*
 * Use existing Bootstrap 4 classes and

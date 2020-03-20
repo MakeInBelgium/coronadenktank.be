@@ -6,8 +6,14 @@
   }
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  font-size: 1.75rem;
+.navbar-dark .navbar-nav {
+  .nav-link {
+    font-size: 1.75rem;
+    color: $corona-white;
+  }
+  .active>.nav-link {
+    color: $corona-yellow;
+  }
 }
 
 .main-menu {
@@ -30,6 +36,11 @@
   }
 }
 
+.nav-link:focus, .nav-link:hover,
 nav a:hover {
   text-decoration: underline;
+}
+
+.slack-link {
+  white-space: nowrap;
 }

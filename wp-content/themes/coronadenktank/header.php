@@ -64,12 +64,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
-						'theme_location'  => 'primary',
+						'theme_location'  => 'supporting',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav ml-auto',
 						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
+						'menu_id'         => 'supporting-menu',
 						'depth'           => 2,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
@@ -79,5 +79,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
+    <nav class="main-menu">
+        <div class="container">
+          <?php wp_nav_menu(
+            array(
+              'theme_location'  => 'primary',
+              'container_class' => '',
+              'container_id'    => 'navbarNavDropdown',
+              'menu_class'      => 'nav justify-content-between',
+              'fallback_cb'     => '',
+              'menu_id'         => 'main-menu',
+              'depth'           => 2,
+              'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+            )
+          ); ?>
+        </div>
+    </nav>
 
 	</div><!-- #wrapper-navbar end -->

@@ -12,6 +12,10 @@
  Text Domain:  coronadenktank
  Tags:         grid-layout
 */
+/*
+AVAILABLE FONTS:
+
+ */
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -11624,6 +11628,31 @@ figure.woocommerce-product-gallery__wrapper {
 
 .gallery-caption {
   display: block; }
+
+#page-wrapper {
+  padding-top: 0; }
+  #page-wrapper .entry-header {
+    padding-top: 30px; }
+    #page-wrapper .entry-header .entry-title {
+      font-size: 5rem;
+      font-weight: 600; }
+
+.section-highlighted {
+  padding-bottom: 96px;
+  position: relative;
+  color: #FFFFFF; }
+  .section-highlighted .background-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1; }
+  .section-highlighted a {
+    color: #F6F061; }
 
 .navbar-brand {
   font-size: 1.875rem; }

@@ -1,0 +1,24 @@
+{
+  "browserSyncOptions" : {
+    "proxy": "localhost/wordpress/",
+    "notify": false
+  },
+  "browserSyncWatchFiles" : [
+    "./*.min.css",
+    "./js/*.min.js",
+    "./**/*.php"
+  ],
+  "paths" : {
+    "js": "./js",
+    "css": "./",
+    "img": "./img",
+		"imgsrc": "./src/img",
+    "sass": "./sass",
+    "node": "./node_modules/",
+    "bower": "./bower_components/",
+    "dev": "./src",
+    "dist": "./dist",
+    "distprod": "./dist-product",
+    "vendor": ""
+  }
+}

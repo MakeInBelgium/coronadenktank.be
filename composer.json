@@ -1,0 +1,78 @@
+{
+	"name": "client/project",
+	"description": "Fill in some stuff",
+	"type": "project",
+	"require": {
+		"appsaloon/gravityforms": "^2.3",
+		"appsaloon/advanced-custom-fields-pro": "^5.6",
+		"appsaloon/custom-post-type-ui": "^1.5",
+		"appsaloon/wp-migrate-db-pro": "*",
+		"appsaloon/wp-migrate-db-pro-media-files": "*",
+		"appsaloon/wp-rocket": "^3.1",
+		"appsaloon/wp-seopress-pro": "^3",
+
+		"wpackagist-plugin/shortpixel-adaptive-images": "^1",
+		"wpackagist-plugin/cookiebot": "*",
+		"wpackagist-plugin/wp-optimize": "*",
+		"wpackagist-plugin/postmark-approved-wordpress-plugin": "^1.11",
+		"wpackagist-plugin/acf-gravityforms-add-on": "^1.2",
+		"wpackagist-plugin/wp-seopress":"^3.0",
+
+		"appsaloon/appsaloon-wp-tools": "*",
+		"wpackagist-theme/twentytwenty": "*",
+
+		"wpackagist-plugin/wordfence":"*",
+		"vlucas/phpdotenv": "^3",
+		"roots/wp-stage-switcher": "*",
+		"johnpbloch/wordpress-core-installer": "^0.2.0",
+		"johnpbloch/wordpress-core": "^5",
+		"koodimonni-language/core-nl_be": "*",
+		"appsaloon/understrap": "^0.9.4"
+	},
+	"authors": [
+		{
+			"name": "You?? - AppSaloon",
+			"email": "you@appsaloon.be"
+		},{
+			"name": "Kim Vanrijckel - AppSaloon",
+			"email": "kim@appsaloon.be"
+		},
+		{
+			"name": "Mark Creeten - AppSaloon",
+			"email": "mark@appsaloon.be"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		},
+		{
+			"type": "composer",
+			"url": "https://plugins.appsaloon.be/satispress/"
+		},
+		{
+			"type": "composer",
+			"url": "https://wp-languages.github.io"
+		}
+	],
+	"extra": {
+		"dropin-paths": {
+			"wp-content/languages/": [
+				"vendor:koodimonni-language"
+			]
+		},
+		"installer-paths": {
+			"wp-content/themes/{$name}": [
+				"type:wordpress-theme"
+			],
+			"wp-content/mu-plugins/{$name}/": [
+				"type:wordpress-muplugin"
+			],
+			"wp-content/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			]
+		},
+		"wordpress-install-dir": "core"
+	}
+}

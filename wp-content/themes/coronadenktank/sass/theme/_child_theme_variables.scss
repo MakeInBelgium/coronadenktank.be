@@ -23,13 +23,19 @@ $primary:                     #7242E0;
 $corona-yellow:               #F6F061;
 $corona-white:                #FFFFFF;
 $corona-primary-light:        #8064D5;
+$corona-primary-dark:         #2D0E89;
 
+$purple_heart:                $primary;
+$true_v:                      $corona-primary-light;
+$blue_gem:                    $corona-primary-dark;
+$portica:                     $corona-yellow;
 
 
 //
 // Typography
 //
 
+$font-size-base:              1.375rem;
 $font-family-base:            upgrade, sans-serif !default;
 $font-weight-normal:          300 !default;
 

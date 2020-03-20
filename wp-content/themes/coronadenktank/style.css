@@ -11630,7 +11630,8 @@ figure.woocommerce-product-gallery__wrapper {
   display: block; }
 
 p {
-  font-size: 22px; }
+  font-size: 22px;
+  color: #2D0E89; }
 
 #page-wrapper {
   padding-top: 0; }
@@ -11740,17 +11741,13 @@ nav a:hover {
 .has-catskill-white-background-color {
   background-color: #F1F3F8; }
 
-.content-7 h1 {
-  padding: 46px 41px 27px 132px;
-  background-color: #fff;
-  margin-right: -137px; }
-
 .content-7 .wp-block-media-text {
-  max-width: 80% !important;
   margin: 0 auto; }
 
 .content-7 .wp-block-media-text img {
-  height: 509px; }
+  height: 509px;
+  width: auto;
+  padding: 40px; }
 
 /*
 * Use existing Bootstrap 4 classes and

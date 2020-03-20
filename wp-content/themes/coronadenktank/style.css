@@ -11734,6 +11734,18 @@ nav a:hover {
 .has-purple-heart-background-color {
   background-color: #7242E0; }
 
+.content-7 h1 {
+  padding: 46px 41px 27px 132px;
+  background-color: #fff;
+  margin-right: -137px; }
+
+.content-7 .wp-block-media-text {
+  max-width: 80% !important;
+  margin: 0 auto; }
+
+.content-7 .wp-block-media-text img {
+  height: 509px; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

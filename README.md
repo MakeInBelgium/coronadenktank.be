@@ -15,4 +15,5 @@ een snel itererende website rond de resources voor de bestrijding van Corona
 
 ## Development workflow
 ### Deployment
-- On push to the staging branch, a deployment is triggered to our staging environment 
+- On push to the staging branch, a deployment is triggered to our staging environment
+- Updated files are pulled by git on Plesk 

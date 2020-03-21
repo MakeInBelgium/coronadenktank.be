@@ -10,5 +10,9 @@ een snel itererende website rond de resources voor de bestrijding van Corona
 * Update the .env values
 * Run command `composer install`
   * Some plugin downloads are protected.
-    * Username (= API-key) : Slack channel
+    * Username (= API-key) : Zie Slack channel
     * Password : satispress 
+
+## Development workflow
+### Deployment
+- On push to the staging branch, a deployment is triggered to our staging environment 

@@ -40,3 +40,5 @@ require_once(get_stylesheet_directory()."/functions/b35-menus.php");
 require_once(get_stylesheet_directory()."/functions/b35-disable-author-pages.php");
 require_once(get_stylesheet_directory()."/functions/b35-footer.php");
 require_once(get_stylesheet_directory()."/functions/b35-gutenberg-colors.php");
+require_once(get_stylesheet_directory()."/functions/b35-gutenberg-helpers.php");
+require_once(get_stylesheet_directory()."/functions/b35-gravityforms-bootstrap.php");

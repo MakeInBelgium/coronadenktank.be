@@ -11645,6 +11645,8 @@ p {
   padding-bottom: 96px;
   position: relative;
   color: #FFFFFF; }
+  .section-highlighted p {
+    color: #FFFFFF; }
   .section-highlighted .background-image {
     -o-object-fit: cover;
        object-fit: cover;

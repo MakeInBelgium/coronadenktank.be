@@ -19,6 +19,12 @@ p {
   padding-bottom: 96px;
   position: relative;
 
+  color: $corona-white;
+
+  p {
+    color: $corona-white;
+  }
+
   .background-image {
     object-fit: cover;
     object-position: center center;
@@ -28,8 +34,6 @@ p {
     left: 0;
     z-index: -1;
   }
-
-  color: $corona-white;
   a {
     color: $corona-yellow;
   }

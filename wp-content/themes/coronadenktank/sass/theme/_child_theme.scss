@@ -87,9 +87,10 @@ p {
   .initiative {
     background-color: $corona-white;
     padding: 25px;
+
     h4 {
       line-height: 33px;
-      height: 99px;
+      height: 110px;
       overflow: hidden;
       a {
         color: #8f81cb;
@@ -97,6 +98,7 @@ p {
         font-weight: 300;
       }
     }
+    
     .link {
       color: $blue-gem;
       font-weight: 300;

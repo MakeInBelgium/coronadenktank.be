@@ -42,3 +42,6 @@ require_once(get_stylesheet_directory()."/functions/b35-footer.php");
 require_once(get_stylesheet_directory()."/functions/b35-gutenberg-colors.php");
 require_once(get_stylesheet_directory()."/functions/b35-gutenberg-helpers.php");
 require_once(get_stylesheet_directory()."/functions/b35-gravityforms-bootstrap.php");
+require_once(get_stylesheet_directory()."/functions/b35-theme-setup.php");
+require_once(get_stylesheet_directory()."/functions/b35-acf-blocks.php");
+require_once(get_stylesheet_directory()."/functions/b35-load-translations.php");

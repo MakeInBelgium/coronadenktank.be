@@ -3,10 +3,10 @@
     "title": "Initiatives",
     "fields": [
         {
-            "key": "field_5e77c5c750657",
-            "label": "Lees meer link",
-            "name": "link",
-            "type": "relationship",
+            "key": "field_5e791812e1dd0",
+            "label": "Category",
+            "name": "category",
+            "type": "taxonomy",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,16 +15,14 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": "",
-            "taxonomy": "",
-            "filters": [
-                "post_type",
-                "taxonomy"
-            ],
-            "elements": "",
-            "min": "",
-            "max": "",
-            "return_format": "object"
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
         }
     ],
     "location": [
@@ -44,5 +42,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1584964297
+    "modified": 1584994370
 }

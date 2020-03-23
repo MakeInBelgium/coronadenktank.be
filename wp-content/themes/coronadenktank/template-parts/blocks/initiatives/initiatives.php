@@ -23,6 +23,18 @@ $args = array(
   'orderby'=>'date',
 );
 
+$categories = get_field("category");
+
+if ($categories) {
+  $args['tax_query'] = array(
+    array(
+      'taxonomy' => 'category',
+      'field'    => 'term_id',
+      'terms'    => $categories,
+    )
+  );
+}
+
 $the_query = new WP_Query( $args );
 
 // The Loop

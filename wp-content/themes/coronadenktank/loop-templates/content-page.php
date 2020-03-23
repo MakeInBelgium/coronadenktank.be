@@ -44,7 +44,7 @@ $separator = "<!-- wp:separator -->
     </div>
     <div class="entry-content">
       <?php
-      echo b35_getHtmlForGutenbergBlocks( implode($blocks, $separator ));
+      echo b35_getHtmlForGutenbergBlocks( implode($separator, $blocks));
       ?>
 
       <?php

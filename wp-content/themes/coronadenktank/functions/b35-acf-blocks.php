@@ -4,13 +4,13 @@ function register_acf_block_types() {
 
   // register a testimonial block.
   acf_register_block_type(array(
-    'name'              => 'activities',
-    'title'             => __('Activities'),
-    'description'       => __('A block with the latest activities.'),
-    'render_template'   => 'template-parts/blocks/activities/activities.php',
+    'name'              => 'initiatives',
+    'title'             => __('Initiatives'),
+    'description'       => __('A block with the latest initiatives.'),
+    'render_template'   => 'template-parts/blocks/initiatives/initiatives.php',
     'category'          => 'listing',
     'icon'              => 'admin-comments',
-    'keywords'          => array( 'activities', 'listing' ),
+    'keywords'          => array( 'initiatives', 'listing' ),
   ));
 }
 

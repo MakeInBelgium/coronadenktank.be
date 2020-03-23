@@ -32,7 +32,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/activities"
+                "value": "acf\/initiatives"
             }
         ]
     ],
@@ -44,5 +44,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1584907949
+    "modified": 1584964297
 }

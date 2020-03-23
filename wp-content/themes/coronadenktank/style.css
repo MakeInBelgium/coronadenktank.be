@@ -11644,7 +11644,9 @@ p {
 .section-highlighted {
   padding-bottom: 96px;
   position: relative;
-  color: #FFFFFF; }
+  color: #FFFFF8; }
+  .section-highlighted p {
+    color: #FFFFF8; }
   .section-highlighted .background-image {
     -o-object-fit: cover;
        object-fit: cover;
@@ -11667,7 +11669,7 @@ p {
 #wrapper-footer-full,
 #wrapper-static-hero {
   background-color: #2D0E89;
-  color: #FFFFFF; }
+  color: #FFFFF8; }
 
 .wp-block-button__link {
   font-weight: 600;
@@ -11678,6 +11680,40 @@ p {
   .wp-block-button__link:hover {
     color: initial; }
 
+.initiative-listing {
+  margin: 30px -15px; }
+  .initiative-listing div, .initiative-listing p {
+    color: #8F81CB; }
+  .initiative-listing img {
+    background-color: #F1F3F8;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+    height: 190px;
+    width: 100%; }
+    .initiative-listing img.default {
+      -o-object-fit: contain;
+         object-fit: contain;
+      padding: 20px; }
+  .initiative-listing .initiative {
+    background-color: #FFFFF8;
+    padding: 25px; }
+    .initiative-listing .initiative h4 {
+      line-height: 33px;
+      height: 99px;
+      overflow: hidden; }
+      .initiative-listing .initiative h4 a {
+        color: #8f81cb;
+        font-size: 22px;
+        font-weight: 300; }
+    .initiative-listing .initiative .link {
+      color: #2D0E89;
+      font-weight: 300;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAYAAACTQC2+AAAABGdBTUEAALGPC/xhBQAAARJJREFUSA1jYKAA6PJ11ejyd6f+//+fkZAxTIQU4JNn4+HvY2D4H60n0D2noeE/XrMIugSfRSA5Y6mZXL++ftwGtPDepQ9lyYyMjP+x6cHrCmwa0MXOPkv/xsbN7wV0sTLIZ7iCkWIfwSwG+ez31w/b/zMw3rn0oTQF3WdUswhkIT7LqGoRPsuobhHcsi8fdzAw/r918UNZKigYaWIRVsuAme4HSIJW4D/Df1YmRsY+FhkxDn5aWPLpw3e2L7+ZVgMt+qzuplBBk6DzVJnE/vT1jw1ASz5puClGrV4d9pfqFmGzBBRiVLUIlyVUtQifJVSziJAlVLGIGEsotohYS0AWUQT0+LrrgTiCUKVHkSWkagYArdetYjEzKOQAAAAASUVORK5CYII=");
+      background-repeat: no-repeat;
+      background-position: right 15px center;
+      padding-right: 50px; }
+
 .navbar-brand {
   font-size: 1.875rem; }
   .navbar-brand img.img-fluid {
@@ -11685,7 +11721,7 @@ p {
 
 .navbar-dark .navbar-nav .nav-link {
   font-size: 1.75rem;
-  color: #FFFFFF; }
+  color: #FFFFF8; }
 
 .navbar-dark .navbar-nav .active > .nav-link {
   color: #F6F061; }
@@ -11700,7 +11736,7 @@ p {
     text-align: right;
     padding-right: 0; }
   .main-menu a {
-    color: #FFFFFF; }
+    color: #FFFFF8; }
   .main-menu .active a {
     color: #F6F061; }
 

@@ -45,3 +45,4 @@ require_once(get_stylesheet_directory()."/functions/b35-gravityforms-bootstrap.p
 require_once(get_stylesheet_directory()."/functions/b35-theme-setup.php");
 require_once(get_stylesheet_directory()."/functions/b35-acf-blocks.php");
 require_once(get_stylesheet_directory()."/functions/b35-load-translations.php");
+require_once(get_stylesheet_directory()."/functions/b35-rendertemplate.php");

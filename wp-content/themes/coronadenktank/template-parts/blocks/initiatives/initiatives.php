@@ -9,6 +9,9 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
+
+$v = get_field("visualisation");
+
 // Create id attribute allowing for custom "anchor" value.
 $id = 'testimonial-' . $block['id'];
 if( !empty($block['anchor']) ) {
@@ -18,7 +21,7 @@ if( !empty($block['anchor']) ) {
 $args = array(
   'post_type' => 'initiative',
   'post_status' => 'publish',
-  'posts_per_page'=>4,
+  'posts_per_page'=> get_field("nbr_items"),
   'order'=>'DESC',
   'orderby'=>'date',
 );
@@ -37,13 +40,42 @@ if ($categories) {
 
 $the_query = new WP_Query( $args );
 
+
+switch ($v) {
+  case "large":
+    $template = <<<TEMPLATE
+    <div class='col-md-3 col-12 large'>
+    <div><a href="{{link}}">{{img}}</a></div>
+      <div class="initiative">
+        <div>{{date}}</div>
+        <h4><a href="{{link}}">{{title}}</a></h4>
+<!--         <p>{{excerpt}}</p>-->
+        <a href="{{link}}" class="link">{{readmore}}</a>
+      </div>
+    </div>
+TEMPLATE;
+    break;
+  case "compact":
+    $template = <<<TEMPLATE
+    <div class='col-md-3 col-12 compact'>
+      <div class="initiative">
+        <div>{{date}}</div>
+        <h4><a href="{{link}}">{{title}}</a></h4>
+<!--         <p>{{excerpt}}</p>-->
+        <a href="{{link}}" class="link">{{readmore}}</a>
+      </div>
+    </div>
+TEMPLATE;
+    break;
+}
+
 // The Loop
 if ( $the_query->have_posts() ) {
   print("<div class='row initiative-listing'>");
   $posts = $the_query->posts;
   foreach ($posts as $post) {
-    $title = $post->post_title;
-    $link = get_permalink($post->ID);
+    $vars['title'] = $post->post_title;
+    $vars['link'] = get_permalink($post->ID);
 
     // Featured Image
     $classes = "";
@@ -53,25 +85,16 @@ if ( $the_query->have_posts() ) {
       $postimgid = $defaultimgid;
       $classes .= ' default'; // set default image class
     }
-    $img = wp_get_attachment_image($postimgid, 'thumbnail',false, ["class" => $classes]);
-    $date = get_the_date("d.m.y", $post->ID);
+    $vars['img'] = wp_get_attachment_image($postimgid, 'thumbnail',false, ["class" => $classes]);
+    $vars['date'] = get_the_date("d.m.y", $post->ID);
 
     remove_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link' );
-    $excerpt = substr(get_the_excerpt($post->ID), 0, 75);
+    $vars['excerpt'] = substr(get_the_excerpt($post->ID), 0, 75);
     add_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link' );
-    $readmore = __("Read more", "coronadenktank");
+    $vars['readmore'] = __("Read more", "coronadenktank");
 
-    $template = <<<TEMPLATE
-    <div class='col-md-3 col-12'>
-    <div><a href="$link">$img</a></div>
-      <div class="initiative">
-        <div>$date</div>
-        <h4><a href="$link">$title</a></h4>
-<!--         <p>$excerpt</p>-->
-        <a href="$link" class="link">$readmore</a>
-      </div>
-    </div>
-TEMPLATE;
+    $template = b35_renderTemplate($template, $vars);
+
     print(trim(preg_replace('/\n/', '', $template)));
   }
   print("</div>");

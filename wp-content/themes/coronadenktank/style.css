@@ -11757,7 +11757,13 @@ nav a:hover {
 .initiative-listing {
   margin: 30px -15px; }
   .initiative-listing .initiative {
-    padding: 25px; }
+    padding: 15px 0;
+    border-bottom: 4px solid #F6F061; }
+    .initiative-listing .initiative div, .initiative-listing .initiative h4, .initiative-listing .initiative p, .initiative-listing .initiative a {
+      color: #8F81CB; }
+    .initiative-listing .initiative div.date {
+      font-weight: 600;
+      font-size: 1rem; }
     .initiative-listing .initiative h4 {
       line-height: 33px;
       height: 110px;
@@ -11773,20 +11779,24 @@ nav a:hover {
       background-position: right 15px center;
       padding-right: 50px; }
 
-.section-highlighted .initiative-listing .large div, .section-highlighted .initiative-listing .large p {
-  color: #8F81CB; }
-
-.section-highlighted .initiative-listing .large img {
+.initiative-listing .large img {
   background-color: #F1F3F8;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
   height: 190px;
   width: 100%; }
-  .section-highlighted .initiative-listing .large img.default {
+  .initiative-listing .large img.default {
     -o-object-fit: contain;
        object-fit: contain;
     padding: 20px; }
+
+.section-highlighted .initiative {
+  padding: 25px;
+  border: none; }
+
+.section-highlighted .initiative-listing .large div, .section-highlighted .initiative-listing .large p {
+  color: #8F81CB; }
 
 .section-highlighted .initiative-listing .large .initiative {
   background-color: #FFFFF8; }

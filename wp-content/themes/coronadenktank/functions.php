@@ -19,8 +19,6 @@ function theme_enqueue_styles() {
 
 	// Get the theme data
 	$the_theme = wp_get_theme();
-	  // Via accpount van Bram Esposito bram.esposito@gmail.com
-    wp_enqueue_style( 'Adobe Font-Upgrade', "https://use.typekit.net/uud8syv.css", array(), $the_theme->get( 'Version' ) );
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/style.min.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'jquery');
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
@@ -35,9 +33,10 @@ function add_child_theme_textdomain() {
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
 
+require_once(get_stylesheet_directory()."/functions/b35-enqueue-js.php");
 require_once(get_stylesheet_directory()."/functions/b35-disable-comments.php");
-require_once(get_stylesheet_directory()."/functions/b35-menus.php");
 require_once(get_stylesheet_directory()."/functions/b35-disable-author-pages.php");
+require_once(get_stylesheet_directory()."/functions/b35-menus.php");
 require_once(get_stylesheet_directory()."/functions/b35-footer.php");
 require_once(get_stylesheet_directory()."/functions/b35-gutenberg-colors.php");
 require_once(get_stylesheet_directory()."/functions/b35-gutenberg-helpers.php");

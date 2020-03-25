@@ -11636,6 +11636,12 @@ p {
   font-size: 22px;
   color: #2D0E89; }
 
+.page-header .page-title {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #2d0e89;
+  margin-top: 80px; }
+
 #page-wrapper {
   padding-top: 0; }
   #page-wrapper .entry-header {

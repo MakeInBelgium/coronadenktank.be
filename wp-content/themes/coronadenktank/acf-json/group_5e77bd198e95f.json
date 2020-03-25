@@ -1,6 +1,6 @@
 {
     "key": "group_5e77bd198e95f",
-    "title": "Initiatives",
+    "title": "Initiative listing block",
     "fields": [
         {
             "key": "field_5e791812e1dd0",
@@ -87,5 +87,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1585036616
+    "modified": 1585054851
 }

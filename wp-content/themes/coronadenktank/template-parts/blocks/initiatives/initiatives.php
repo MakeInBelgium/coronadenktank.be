@@ -47,7 +47,7 @@ switch ($v) {
     <div class='col-md-3 col-12 large'>
     <div><a href="{{link}}">{{img}}</a></div>
       <div class="initiative">
-        <div>{{date}}</div>
+        <div class="date">{{date}}</div>
         <h4><a href="{{link}}">{{title}}</a></h4>
 <!--         <p>{{excerpt}}</p>-->
         <a href="{{link}}" class="link">{{readmore}}</a>
@@ -59,7 +59,7 @@ TEMPLATE;
     $template = <<<TEMPLATE
     <div class='col-md-3 col-12 compact'>
       <div class="initiative">
-        <div>{{date}}</div>
+        <div class="date">{{date}}</div>
         <h4><a href="{{link}}">{{title}}</a></h4>
 <!--         <p>{{excerpt}}</p>-->
         <a href="{{link}}" class="link">{{readmore}}</a>

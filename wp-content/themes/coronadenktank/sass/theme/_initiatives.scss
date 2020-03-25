@@ -3,7 +3,17 @@
 
 
   .initiative {
-    padding: 25px;
+    padding: 15px 0;
+    border-bottom: 4px solid $corona-yellow;
+
+    div, h4, p, a {
+      color: $corona-primary-lighter;
+    }
+
+    div.date {
+      font-weight: 600;
+      font-size: 1rem;
+    }
 
     h4 {
       line-height: 33px;
@@ -27,23 +37,30 @@
   }
 }
 
+// all visualisations
+.initiative-listing .large {
+  img {
+    background-color: $catskill_white;
+    object-fit: cover;
+    overflow: hidden;
+    height: 190px;
+    width: 100%;
+
+    &.default {
+      object-fit: contain;
+      padding: 20px;
+    }
+  }
+}
+
 .section-highlighted {
+  .initiative {
+    padding: 25px;
+    border: none;
+  }
   .initiative-listing .large {
     div, p {
       color: $corona-primary-lighter;
-    }
-
-    img {
-      background-color: $catskill_white;
-      object-fit: cover;
-      overflow: hidden;
-      height: 190px;
-      width: 100%;
-
-      &.default {
-        object-fit: contain;
-        padding: 20px;
-      }
     }
 
     .initiative {

@@ -14,7 +14,10 @@
 */
 /*
 AVAILABLE FONTS:
-
+300
+400
+500
+600
  */
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -11825,6 +11828,22 @@ nav a:hover {
     color: #F6F061; }
   .section-highlighted .initiative-listing .compact .initiative .link {
     color: #F6F061; }
+
+.term.active {
+  font-weight: 400; }
+
+.initiatives-placeholder {
+  background-color: #F1F3F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh; }
 
 /*
 * Use existing Bootstrap 4 classes and

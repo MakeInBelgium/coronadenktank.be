@@ -99,3 +99,15 @@
     }
   }
 }
+
+.term.active {
+  font-weight: 400;
+}
+
+.initiatives-placeholder {
+  background-color: $catskill_white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}

@@ -30,6 +30,7 @@ function b35_get_initiatives($args) {
     $initiative['excerpt'] = substr(get_the_excerpt($post->ID), 0, 75);
     add_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link' );
     $initiative['readmore'] = __("Read more", "coronadenktank");
+    $initiative['terms'] = get_the_terms($post->ID, "initiatives_category");
 
     $initiatives[] = $initiative;
   }

@@ -49,7 +49,7 @@ switch ($v) {
       <div class="initiative">
         <div class="date">{{date}}</div>
         <h4><a href="{{link}}">{{title}}</a></h4>
-<!--         <p>{{excerpt}}</p>-->
+         <p>{{excerpt}}</p>
         <a href="{{link}}" class="link">{{readmore}}</a>
       </div>
     </div>
@@ -61,7 +61,7 @@ TEMPLATE;
       <div class="initiative">
         <div class="date">{{date}}</div>
         <h4><a href="{{link}}">{{title}}</a></h4>
-<!--         <p>{{excerpt}}</p>-->
+         <p>{{excerpt}}</p>
         <a href="{{link}}" class="link">{{readmore}}</a>
       </div>
     </div>
@@ -74,6 +74,7 @@ if ( $the_query->have_posts() ) {
   print("<div class='row initiative-listing'>");
   $posts = $the_query->posts;
   foreach ($posts as $post) {
+    $vars = [];
     $vars['title'] = $post->post_title;
     $vars['link'] = get_permalink($post->ID);
 
@@ -93,9 +94,9 @@ if ( $the_query->have_posts() ) {
     add_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link' );
     $vars['readmore'] = __("Read more", "coronadenktank");
 
-    $template = b35_renderTemplate($template, $vars);
+    $renderedTemplate = b35_renderTemplate($template, $vars);
 
-    print(trim(preg_replace('/\n/', '', $template)));
+    print(trim(preg_replace('/\n/', '', $renderedTemplate)));
   }
   print("</div>");
 }

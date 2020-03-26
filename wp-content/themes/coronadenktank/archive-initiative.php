@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="initiative">
                 <div class="date">{{item.date}}</div>
                 <h4><a :href="item.link">{{item.title}}</a></h4>
-                         <p>{{item.excerpt}}</p>
+                <p class="excerpt"><a :href="{{item.link}}">{{item.excerpt}}</a></p>
                 <a :href="item.link" class="link">{{item.readmore}}</a>
             </div>
         </div>

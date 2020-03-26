@@ -49,7 +49,7 @@ switch ($v) {
       <div class="initiative">
         <div class="date">{{date}}</div>
         <h4><a href="{{link}}">{{title}}</a></h4>
-         <p>{{excerpt}}</p>
+         <p class="excerpt">{{excerpt}}</p>
         <a href="{{link}}" class="link">{{readmore}}</a>
       </div>
     </div>
@@ -61,7 +61,7 @@ TEMPLATE;
       <div class="initiative">
         <div class="date">{{date}}</div>
         <h4><a href="{{link}}">{{title}}</a></h4>
-         <p>{{excerpt}}</p>
+         <p class="excerpt">{{excerpt}}</p>
         <a href="{{link}}" class="link">{{readmore}}</a>
       </div>
     </div>

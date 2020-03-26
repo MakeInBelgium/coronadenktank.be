@@ -11776,7 +11776,12 @@ nav a:hover {
       overflow: hidden; }
       .initiative-listing .initiative h4 a {
         font-size: 22px;
-        font-weight: 300; }
+        font-weight: 400; }
+    .initiative-listing .initiative p.excerpt {
+      height: 110px;
+      text-overflow: ellipsis; }
+      .initiative-listing .initiative p.excerpt:after {
+        content: "…"; }
     .initiative-listing .initiative .link {
       color: #2D0E89;
       font-weight: 300;

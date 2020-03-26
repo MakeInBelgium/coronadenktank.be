@@ -4,7 +4,7 @@ body {
 
 p {
   font-size: 22px;
-  color: $corona-primary-dark;
+  //color: $corona-primary-dark;
 }
 
 .page-header .page-title {
@@ -14,16 +14,16 @@ p {
   margin-top: 80px;
 }
 
+
+#single-wrapper.wrapper,
 #page-wrapper {
-  //padding-top: 30px;
   padding-top: 0;
-  .entry-header {
-    padding-top: 30px;
-    .entry-title {
-      font-size: 5rem;
-      font-weight: 600;
-    }
-  }
+}
+
+h1 {
+  padding-top: 30px;
+  font-size: 5rem;
+  font-weight: 600;
 }
 
 .section-highlighted {
@@ -53,7 +53,7 @@ p {
 .container h2 {
   font-size: 5rem;
   font-weight: 600;
-  color: $corona-primary-dark;
+  //color: $corona-primary-dark;
   margin-top: 80px;
 }
 

@@ -93,9 +93,9 @@ if ( $the_query->have_posts() ) {
     add_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link' );
     $vars['readmore'] = __("Read more", "coronadenktank");
 
-    $template = b35_renderTemplate($template, $vars);
+    $renderedTemplate = b35_renderTemplate($template, $vars);
 
-    print(trim(preg_replace('/\n/', '', $template)));
+    print(trim(preg_replace('/\n/', '', $renderedTemplate)));
   }
   print("</div>");
 }

@@ -14,7 +14,10 @@
 */
 /*
 AVAILABLE FONTS:
-
+300
+400
+500
+600
  */
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -11776,7 +11779,12 @@ nav a:hover {
       overflow: hidden; }
       .initiative-listing .initiative h4 a {
         font-size: 22px;
-        font-weight: 300; }
+        font-weight: 400; }
+    .initiative-listing .initiative p.excerpt {
+      height: 110px;
+      text-overflow: ellipsis; }
+      .initiative-listing .initiative p.excerpt:after {
+        content: "…"; }
     .initiative-listing .initiative .link {
       color: #2D0E89;
       font-weight: 300;
@@ -11820,6 +11828,22 @@ nav a:hover {
     color: #F6F061; }
   .section-highlighted .initiative-listing .compact .initiative .link {
     color: #F6F061; }
+
+.term.active {
+  font-weight: 400; }
+
+.initiatives-placeholder {
+  background-color: #F1F3F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh; }
 
 /*
 * Use existing Bootstrap 4 classes and

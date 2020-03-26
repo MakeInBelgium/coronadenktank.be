@@ -21,7 +21,15 @@
       overflow: hidden;
       a {
         font-size: 22px;
-        font-weight: 300;
+        font-weight: 400;
+      }
+    }
+
+    p.excerpt {
+      height: 110px;
+      text-overflow: ellipsis;
+      &:after {
+        content: "…";
       }
     }
 
@@ -90,4 +98,16 @@
       border: solid 1px $corona-yellow;
     }
   }
+}
+
+.term.active {
+  font-weight: 400;
+}
+
+.initiatives-placeholder {
+  background-color: $catskill_white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
 }

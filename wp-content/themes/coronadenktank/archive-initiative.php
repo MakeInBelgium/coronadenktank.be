@@ -13,6 +13,15 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
+
+
+$terms = get_terms( array(
+  'taxonomy' => 'initiatives_category',
+  'hide_empty' => false,
+) );
+
+array_unshift($terms, ["name" => __("all initiatives","coronadenktank"),"term_id" => "all"]);
+
 ?>
 
 <div class="wrapper" id="archive-wrapper">
@@ -41,16 +50,23 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
 
 <script type="x-template" id="initiative-filter">
-<div class="filter"></div>
+<div class="filter">
+    <p>Filter op: <a href="#" v-for="(term, i) in terms" v-on:click.stop.prevent="filterby(i);"  v-bind:class="[{active: i === activeItem}, 'term','px-3']" :id="'term_'+i" >{{term.name}}</a></p>
+</div>
 </script>
 <script type="x-template" id="initiative-list">
     <div class="row initiative-listing">
-        <div v-for="(item, i) in initiatives" class="col-md-3 col-12 large" :id="'item_'+i">
+        <div v-show="loading" class="col-12 initiatives-placeholder">
+            <div v-show="loading" class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div v-for="(item, i) in filteredInitiatives" class="col-md-3 col-12 large" :id="'item_'+i">
             <div><a :href="item.link" v-html="item.img"></a></div>
             <div class="initiative">
                 <div class="date">{{item.date}}</div>
                 <h4><a :href="item.link">{{item.title}}</a></h4>
-                         <p>{{item.excerpt}}</p>
+                <p class="excerpt"><a :href="item.link">{{item.excerpt}}</a></p>
                 <a :href="item.link" class="link">{{item.readmore}}</a>
             </div>
         </div>
@@ -62,7 +78,16 @@ const eventBus = new Vue();
 Vue.component('initiative-filter', {
   template: '#initiative-filter',
   data: function () {
-    return {}
+    return {
+      activeItem: 0,
+      terms: <?php print(json_encode($terms));?>,
+    }
+  },
+  methods: {
+    filterby: function(i) {
+      this.activeItem = i;
+      eventBus.$emit('filter-by-termid', this.terms[i].term_id);
+    }
   }
 });
 
@@ -70,18 +95,41 @@ Vue.component('initiative-list', {
   template: '#initiative-list',
   data: function () {
     return {
-          initiatives: []
+          loading: true,
+          initiatives: [],
+          filteredInitiatives: [],
+          term: "all"
         }
   },
   created: function () {
+    eventBus.$on('filter-by-termid', (termid) => {
+      this.term = termid;
+      this.filterInitiatives();
+    });
     var obj = {
       action:	'get_initiatives',
       lang: '<?php echo get_locale(); ?>',
     };
     this.$http.post(coronadenktank.ajax_url, obj, {emulateJSON: true}).then((response) => {
       eventBus.$emit('show-loader',false);
+      this.loading = false;
       this.initiatives = response.body.initiatives;
+      this.filterInitiatives();
     });
+  },
+  methods: {
+    filterInitiatives: function () {
+        if (this.term === "all") {
+          this.filteredInitiatives = this.initiatives;
+        } else {
+          this.filteredInitiatives = this.initiatives.filter((initiative) => {
+            if (initiative.terms) {
+              return initiative.terms.find(term => term.term_id == this.term) != undefined;
+            }
+            return false;
+          });
+        }
+    }
   }
 });
 

@@ -11650,20 +11650,6 @@ h2 {
     font-size: 3rem;
     content: "hello"; } }
 
-#main-nav .navbar-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%; }
-
 .site-name {
   word-wrap: break-word;
   -ms-flex-negative: 1;
@@ -11715,6 +11701,22 @@ h2 {
   padding-right: 50px; }
   .wp-block-button__link:hover {
     color: initial; }
+
+#main-nav .navbar-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 767px) {
+    #main-nav .navbar-group {
+      width: 100%; } }
 
 .navbar-brand {
   font-size: 1.875rem; }

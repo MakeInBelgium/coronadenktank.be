@@ -1,3 +1,14 @@
+#main-nav .navbar-group {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
 .navbar-brand {
   font-size: 1.875rem;
   img.img-fluid {

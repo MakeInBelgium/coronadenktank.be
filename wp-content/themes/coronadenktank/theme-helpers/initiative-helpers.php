@@ -33,7 +33,7 @@ function getThemedInitiativeTemplate($format = "large") {
   switch ($format) {
     case "large":
       $template = <<<TEMPLATE
-    <div class='col-md-3 col-12 large'>
+    <div class='col-xl-3 col-md-6 col-12 large'>
     <div><a href="{{link}}">{{img}}</a></div>
       <div class="initiative">
         <div class="date">{{date}}</div>
@@ -46,7 +46,7 @@ TEMPLATE;
       break;
     case "compact":
       $template = <<<TEMPLATE
-    <div class='col-md-3 col-12 compact'>
+    <div class='col-xl-3 col-md-6 col-12 compact'>
       <div class="initiative">
         <div class="date">{{date}}</div>
         <h4 class="title"><a href="{{link}}">{{title}}</a></h4>

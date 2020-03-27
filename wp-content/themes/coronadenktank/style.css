@@ -11771,12 +11771,14 @@ nav a:hover {
       color: #8F81CB; }
     .initiative-listing .initiative div.date {
       font-weight: 600;
-      font-size: 1rem; }
-    .initiative-listing .initiative h4 {
+      font-size: 1rem;
+      display: none; }
+    .initiative-listing .initiative h4.title {
       line-height: 33px;
-      height: 110px;
-      overflow: hidden; }
-      .initiative-listing .initiative h4 a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .initiative-listing .initiative h4.title a {
         font-size: 22px;
         font-weight: 400; }
     .initiative-listing .initiative p.excerpt {

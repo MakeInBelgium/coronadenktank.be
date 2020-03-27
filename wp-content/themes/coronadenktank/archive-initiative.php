@@ -65,7 +65,7 @@ array_unshift($terms, ["name" => __("all initiatives","coronadenktank"),"term_id
             <div><a :href="item.link" v-html="item.img"></a></div>
             <div class="initiative">
                 <div class="date">{{item.date}}</div>
-                <h4><a :href="item.link">{{item.title}}</a></h4>
+                <h4 class="title"><a :href="item.link">{{item.title}}</a></h4>
                 <p class="excerpt"><a :href="item.link">{{item.excerpt}}</a></p>
                 <a :href="item.link" class="link">{{item.readmore}}</a>
             </div>

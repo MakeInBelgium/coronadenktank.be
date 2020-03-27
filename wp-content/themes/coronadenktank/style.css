@@ -11732,16 +11732,21 @@ h2 {
   font-size: 1.375rem;
   background-color: #8064D5; }
   @media (min-width: 768px) {
+    .main-menu .nav-link:first-child {
+      text-align: left;
+      padding-left: 0; }
+    .main-menu .nav-link:last-child {
+      text-align: right;
+      padding-right: 0; }
     .main-menu .navbar-collapse {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
-  .main-menu .nav-link:first-child {
-    text-align: left;
-    padding-left: 0; }
-  .main-menu .nav-link:last-child {
-    text-align: right;
-    padding-right: 0; }
+  @media (max-width: 767px) {
+    .main-menu .menu-item {
+      width: 100%; }
+      .main-menu .menu-item .nav-link:last-child {
+        text-align: left; } }
   .main-menu a {
     color: #FFFFF8; }
   .main-menu .active a {

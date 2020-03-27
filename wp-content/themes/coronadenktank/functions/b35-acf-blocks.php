@@ -8,7 +8,7 @@ function register_acf_block_types() {
     'title'             => __('Initiatives'),
     'description'       => __('A block with the latest initiatives.'),
     'render_template'   => 'template-parts/blocks/initiatives/initiatives.php',
-    'category'          => 'listing',
+    'category'          => 'widgets',
     'icon'              => 'admin-comments',
     'keywords'          => array( 'initiatives', 'listing' ),
   ));

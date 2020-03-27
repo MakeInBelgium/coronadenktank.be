@@ -11632,26 +11632,56 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
-body {
-  text-rendering: optimizeLegibility; }
-
 p {
   font-size: 22px; }
-
-.page-header .page-title {
-  font-size: 5rem;
-  font-weight: 600;
-  color: #2d0e89;
-  margin-top: 80px; }
-
-#single-wrapper.wrapper,
-#page-wrapper {
-  padding-top: 0; }
 
 h1 {
   padding-top: 30px;
   font-size: 5rem;
   font-weight: 600; }
+
+h2 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-top: 80px; }
+
+@media (max-width: 767.98px) {
+  h1, h2 {
+    font-size: 3rem;
+    content: "hello"; } }
+
+#main-nav .navbar-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+.site-name {
+  word-wrap: break-word;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  min-width: 0;
+  white-space: normal;
+  line-height: 28px; }
+
+.custom-logo-link {
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.page-header .page-title {
+  margin-top: 80px; }
+
+#single-wrapper.wrapper,
+#page-wrapper {
+  padding-top: 0; }
 
 .section-highlighted {
   padding-bottom: 96px;
@@ -11671,11 +11701,6 @@ h1 {
     z-index: -1; }
   .section-highlighted a {
     color: #F6F061; }
-
-.container h2 {
-  font-size: 5rem;
-  font-weight: 600;
-  margin-top: 80px; }
 
 #wrapper-footer-full,
 #wrapper-static-hero {
@@ -11706,6 +11731,11 @@ h1 {
 .main-menu {
   font-size: 1.375rem;
   background-color: #8064D5; }
+  @media (min-width: 768px) {
+    .main-menu .navbar-collapse {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
   .main-menu .nav-link:first-child {
     text-align: left;
     padding-left: 0; }
@@ -11754,13 +11784,9 @@ nav a:hover {
 .has-catskill-white-background-color {
   background-color: #F1F3F8; }
 
-.content-7 .wp-block-media-text {
-  margin: 0 auto; }
-
-.content-7 .wp-block-media-text img {
-  height: 509px;
-  width: auto;
-  padding: 40px; }
+@media (max-width: 767.98px) {
+  .wp-block-media-text .wp-block-media-text__content {
+    padding: 0; } }
 
 .initiative-listing {
   margin: 30px -15px; }

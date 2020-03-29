@@ -30,6 +30,10 @@
   font-size: 1.375rem;
   background-color: $corona-primary-light;
 
+  #main-menu {
+    width: 100%;
+  }
+
   @media (min-width: 768px) {
     .nav-link:first-child {
       text-align: left;

@@ -11733,6 +11733,8 @@ h2 {
 .main-menu {
   font-size: 1.375rem;
   background-color: #8064D5; }
+  .main-menu #main-menu {
+    width: 100%; }
   @media (min-width: 768px) {
     .main-menu .nav-link:first-child {
       text-align: left;

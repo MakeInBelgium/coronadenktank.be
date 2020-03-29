@@ -39,6 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if ( 'container' === $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
+                <div class="navbar-group">
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
@@ -62,7 +63,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
               <?php else : ?>
 
-                <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+                <a class="navbar-brand site-name" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
 
               <?php endif; ?>
                 <?php
@@ -71,6 +72,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
+
+                </div> <!-- end .navbar-group -->
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -95,7 +98,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           <?php wp_nav_menu(
             array(
               'theme_location'  => 'primary',
-              'container_class' => '',
+              'container_class' => 'collapse navbar-collapse',
               'container_id'    => 'navbarNavDropdown',
               'menu_class'      => 'nav justify-content-between',
               'fallback_cb'     => '',

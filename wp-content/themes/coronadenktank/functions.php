@@ -46,3 +46,6 @@ require_once(get_stylesheet_directory()."/functions/b35-acf-blocks.php");
 require_once(get_stylesheet_directory()."/functions/b35-load-translations.php");
 require_once(get_stylesheet_directory()."/functions/b35-rendertemplate.php");
 require_once(get_stylesheet_directory()."/functions/b35-ajax.php");
+
+// Helpers specific for this theme
+require_once(get_stylesheet_directory()."/theme-helpers/initiative-helpers.php");

@@ -13,12 +13,14 @@
     div.date {
       font-weight: 600;
       font-size: 1rem;
+      display: none; // CR: do not show dates
     }
 
-    h4 {
+    h4.title {
       line-height: 33px;
-      height: 110px;
+      white-space: nowrap;
       overflow: hidden;
+      text-overflow: ellipsis;
       a {
         font-size: 22px;
         font-weight: 400;

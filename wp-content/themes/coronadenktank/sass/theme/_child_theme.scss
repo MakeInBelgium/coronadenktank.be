@@ -48,6 +48,18 @@
 #wrapper-static-hero {
   background-color: $corona-primary-dark;
   color: $corona-white;
+
+  a {
+    color: $corona-yellow;
+  }
+  .footer-widget > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .social {
+      justify-content: space-between;
+    }
+  }
 }
 
 .wp-block-button__link {

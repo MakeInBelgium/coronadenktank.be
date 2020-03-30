@@ -22,10 +22,10 @@
 @import "assets/underscores";                            // <------- Underscores media styles
 
 // Any additional imported files //
-@import "theme/typography";                             // <------- Add your styles into this file
+@import "theme/typography";                              // <------- Add your styles into this file
 @import "theme/child_theme";                             // <------- Add your styles into this file
-@import "theme/navigation";                             // <------- Add your styles into this file
-@import "theme/colors";                             // <------- Add your styles into this file
-@import "theme/gutenberg";                             // <------- Add your styles into this file
+@import "theme/navigation";                              // <------- Add your styles into this file
+@import "theme/colors";                                  // <------- Add your styles into this file
+@import "theme/gutenberg";                               // <------- Add your styles into this file
 @import "theme/initiatives";                             // <------- Add your styles into this file
-@import "../src/sass/understrap/theme/contact-form7";    // <------- Loads some basic styling for contact form 7 plugin
+//@import "../src/sass/understrap/theme/contact-form7";    // <------- Loads some basic styling for contact form 7 plugin

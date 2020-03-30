@@ -1,6 +1,6 @@
 {
     "key": "group_5e77bd198e95f",
-    "title": "Initiative listing block",
+    "title": "Initiatives",
     "fields": [
         {
             "key": "field_5e791812e1dd0",
@@ -15,9 +15,9 @@
                 "class": "",
                 "id": ""
             },
-            "taxonomy": "category",
+            "taxonomy": "initiatives_category",
             "field_type": "checkbox",
-            "add_term": 1,
+            "add_term": 0,
             "save_terms": 0,
             "load_terms": 0,
             "return_format": "id",
@@ -87,5 +87,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1585054851
+    "modified": 1585580154
 }

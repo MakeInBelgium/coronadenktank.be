@@ -1,12 +1,12 @@
 {
     "key": "group_5e77bd198e95f",
-    "title": "Initiatives",
+    "title": "Initiative listing block",
     "fields": [
         {
-            "key": "field_5e77c5c750657",
-            "label": "Lees meer link",
-            "name": "link",
-            "type": "relationship",
+            "key": "field_5e791812e1dd0",
+            "label": "Category",
+            "name": "category",
+            "type": "taxonomy",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,16 +15,59 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": "",
-            "taxonomy": "",
-            "filters": [
-                "post_type",
-                "taxonomy"
-            ],
-            "elements": "",
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_5e79bba024f04",
+            "label": "Aantal items",
+            "name": "nbr_items",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 4,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
             "min": "",
             "max": "",
-            "return_format": "object"
+            "step": ""
+        },
+        {
+            "key": "field_5e79bbc724f05",
+            "label": "Visualisatie",
+            "name": "visualisation",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "large": "groot: met afbeelding",
+                "compact": "compact: zonder afbeelding"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "large",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
         }
     ],
     "location": [
@@ -32,7 +75,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/activities"
+                "value": "acf\/initiatives"
             }
         ]
     ],
@@ -44,5 +87,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1584907949
+    "modified": 1585054851
 }

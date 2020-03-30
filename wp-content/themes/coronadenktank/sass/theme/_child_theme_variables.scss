@@ -34,11 +34,17 @@ $blue_gem:                    $corona-primary-dark;
 $portica:                     $corona-yellow;
 $catskill_white:              $corona-primary-light-blue;
 
+//
+// Font Awesome
+//
 
-  //
+$fa-font-path:                "fonts" !default;
+
+//
 // Typography
 //
 
+$body-color:                  $corona-primary-dark;
 $font-size-base:              1.375rem;
 $font-family-base:            upgrade, sans-serif !default;
 $font-weight-normal:          300 !default;
@@ -46,5 +52,8 @@ $font-weight-normal:          300 !default;
 
 /*
 AVAILABLE FONTS:
-
+300
+400
+500
+600
  */

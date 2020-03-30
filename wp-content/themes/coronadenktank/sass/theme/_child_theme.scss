@@ -1,19 +1,24 @@
-p {
-  font-size: 22px;
-  color: $corona-primary-dark;
+.site-name {
+  word-wrap: break-word;
+  flex-shrink: 1;
+  min-width: 0;
+  white-space: normal;
+  line-height: 28px;
 }
 
-#page-wrapper {
-  //padding-top: 30px;
-  padding-top: 0;
-  .entry-header {
-    padding-top: 30px;
-    .entry-title {
-      font-size: 5rem;
-      font-weight: 600;
-    }
-  }
+.custom-logo-link {
+  flex-shrink: 0;
 }
+
+.page-header .page-title {
+  margin-top: 80px;
+}
+
+#single-wrapper.wrapper,
+#page-wrapper {
+  padding-top: 0;
+}
+
 
 .section-highlighted {
   padding-bottom: 96px;
@@ -39,17 +44,31 @@ p {
   }
 }
 
-.container h2 {
-  font-size: 5rem;
-  font-weight: 600;
-  color: $corona-primary-dark;
-  margin-top: 80px;
-}
-
 #wrapper-footer-full,
 #wrapper-static-hero {
   background-color: $corona-primary-dark;
   color: $corona-white;
+
+  a {
+    color: $corona-yellow;
+  }
+
+  .footer-widget > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .social {
+      display: flex;
+      width: 40%;
+      justify-content: space-between;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin: 15px 0;
+    }
+  }
 }
 
 .wp-block-button__link {
@@ -62,49 +81,5 @@ p {
 
   &:hover {
     color: initial;
-  }
-}
-
-.initiative-listing {
-  margin: 30px -15px;
-  div, p {
-    color: $corona-primary-lighter;
-  }
-
-  img {
-    background-color: $catskill_white;
-    object-fit: cover;
-    overflow: hidden;
-    height: 190px;
-    width: 100%;
-
-    &.default {
-      object-fit: contain;
-      padding: 20px;
-    }
-  }
-
-  .initiative {
-    background-color: $corona-white;
-    padding: 25px;
-    h4 {
-      line-height: 33px;
-      height: 99px;
-      overflow: hidden;
-      a {
-        color: #8f81cb;
-        font-size: 22px;
-        font-weight: 300;
-      }
-    }
-    .link {
-      color: $blue-gem;
-      font-weight: 300;
-
-      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAYAAACTQC2+AAAABGdBTUEAALGPC/xhBQAAARJJREFUSA1jYKAA6PJ11ejyd6f+//+fkZAxTIQU4JNn4+HvY2D4H60n0D2noeE/XrMIugSfRSA5Y6mZXL++ftwGtPDepQ9lyYyMjP+x6cHrCmwa0MXOPkv/xsbN7wV0sTLIZ7iCkWIfwSwG+ez31w/b/zMw3rn0oTQF3WdUswhkIT7LqGoRPsuobhHcsi8fdzAw/r918UNZKigYaWIRVsuAme4HSIJW4D/Df1YmRsY+FhkxDn5aWPLpw3e2L7+ZVgMt+qzuplBBk6DzVJnE/vT1jw1ASz5puClGrV4d9pfqFmGzBBRiVLUIlyVUtQifJVSziJAlVLGIGEsotohYS0AWUQT0+LrrgTiCUKVHkSWkagYArdetYjEzKOQAAAAASUVORK5CYII=');
-      background-repeat: no-repeat;
-      background-position: right 15px center;
-      padding-right: 50px;
-    }
   }
 }

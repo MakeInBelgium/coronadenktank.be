@@ -16,3 +16,10 @@ function primary_navigation_lang( $items, $args ) {
   }
   return $items;
 }
+
+function b35_bootstrap_menu_items($classes, $item, $args) {
+  $classes[] = "nav-link";
+  return $classes;
+}
+
+add_filter('nav_menu_css_class',"b35_bootstrap_menu_items", 10, 4 );

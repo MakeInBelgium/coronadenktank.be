@@ -20,21 +20,21 @@ add_filter( 'gform_submit_button', function ( $button, $form ) {
   return $button;
 }, 10, 2 );
 
-add_filter("gform_name_first", "change_name_first", 10, 2);
-function change_name_first($label, $form_id){
-  return false;
-}
-
-add_filter("gform_name_last", "change_name_last", 10, 2);
-function change_name_last($label, $form_id){
-  return false;
-}
-
-
-add_filter("gform_address_zip_2", "change_zip", 10, 2);
-function change_zip($label, $form_id){
-  return "";
-}
+//add_filter("gform_name_first", "change_name_first", 10, 2);
+//function change_name_first($label, $form_id){
+//  return "";
+//}
+//
+//add_filter("gform_name_last", "change_name_last", 10, 2);
+//function change_name_last($label, $form_id){
+//  return "";
+//}
+//
+//
+//add_filter("gform_address_zip_2", "change_zip", 10, 2);
+//function change_zip($label, $form_id){
+//  return "";
+//}
 
 // // delete entries from gravity forms
 // function gravity_after_submission( $entry ) {

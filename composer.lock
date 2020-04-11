@@ -1,19 +1,18 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "722902b3ad30d3179df0ca390a3f0a4e",
     "packages": [
         {
             "name": "appsaloon/advanced-custom-fields-pro",
-            "version": "5.8.8",
+            "version": "5.8.9",
             "dist": {
                 "type": "zip",
-                "url": "https://plugins.appsaloon.be/satispress/advanced-custom-fields-pro/5.8.8",
-                "reference": null,
-                "shasum": "19ebc4c69a9cbb348b46c97dc7bb91f29c857986"
+                "url": "https://plugins.appsaloon.be/satispress/advanced-custom-fields-pro/5.8.9",
+                "shasum": "397de087e8dc7675cb5f5aa8a3723ec4957c6b3e"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -28,12 +27,11 @@
         },
         {
             "name": "appsaloon/appsaloon-wp-tools",
-            "version": "2.0.3",
+            "version": "2.0.6",
             "dist": {
                 "type": "zip",
-                "url": "https://plugins.appsaloon.be/satispress/appsaloon-wp-tools/2.0.3",
-                "reference": null,
-                "shasum": "aa36c505c876ef115013b080476d7607316a3a2d"
+                "url": "https://plugins.appsaloon.be/satispress/appsaloon-wp-tools/2.0.6",
+                "shasum": "2779769e7628630a4b41e958e2ce0ead26ad5b3a"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -51,7 +49,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/custom-post-type-ui/1.7.4",
-                "reference": null,
                 "shasum": "7f6d4c574c22db57139d2e96d0a3389b4bb9373a"
             },
             "require": {
@@ -71,7 +68,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/gravityforms/2.4.17.7",
-                "reference": null,
                 "shasum": "323a157673e4d436349a11f3f923ade7cafd343d"
             },
             "require": {
@@ -91,7 +87,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/understrap/0.9.4",
-                "reference": null,
                 "shasum": "2a65a7b9e182673b1e8e2f88be22d935c77bfa71"
             },
             "require": {
@@ -111,7 +106,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/wp-migrate-db-pro/1.9.10",
-                "reference": null,
                 "shasum": "c888ad359dc083b5480cffaa3d77d94a1a4d3f44"
             },
             "require": {
@@ -131,7 +125,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/wp-migrate-db-pro-media-files/1.4.15",
-                "reference": null,
                 "shasum": "c8621e98cb1ca573c85953c0479b575137a41160"
             },
             "require": {
@@ -151,7 +144,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/wp-rocket/3.5.1",
-                "reference": null,
                 "shasum": "031a38ec57d3edd5021613d8aca0e68c4108d52e"
             },
             "require": {
@@ -167,12 +159,11 @@
         },
         {
             "name": "appsaloon/wp-seopress-pro",
-            "version": "3.8.1.1",
+            "version": "3.8.4",
             "dist": {
                 "type": "zip",
-                "url": "https://plugins.appsaloon.be/satispress/wp-seopress-pro/3.8.1.1",
-                "reference": null,
-                "shasum": "a6bfe2ab668eb6497c4edadada42c3dca15d7219"
+                "url": "https://plugins.appsaloon.be/satispress/wp-seopress-pro/3.8.4",
+                "shasum": "2e41676daf4bef518cde60774049ff5f41ffb8a7"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -187,28 +178,31 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.8.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3"
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
-                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0 || ^2.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "^4.8.36"
+                "composer/composer": "1.6.* || 2.0.*@dev",
+                "composer/semver": "1.0.* || 2.0.*@dev",
+                "phpunit/phpunit": "^4.8.36",
+                "sebastian/comparator": "^1.2.4",
+                "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
@@ -307,27 +301,37 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2020-02-07T10:39:20+00:00"
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-04-07T06:57:05+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.3.2",
+            "version": "5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "a282ab0051fac21d4e0cdd828519e6739743ba92"
+                "reference": "9a9941fcad81015507e6d03801aebc51296baf37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/a282ab0051fac21d4e0cdd828519e6739743ba92",
-                "reference": "a282ab0051fac21d4e0cdd828519e6739743ba92",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/9a9941fcad81015507e6d03801aebc51296baf37",
+                "reference": "9a9941fcad81015507e6d03801aebc51296baf37",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.3.2"
+                "wordpress/core-implementation": "5.4.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -337,17 +341,17 @@
             "authors": [
                 {
                     "name": "WordPress Community",
-                    "homepage": "http://wordpress.org/about/"
+                    "homepage": "https://wordpress.org/about/"
                 }
             ],
             "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
-            "homepage": "http://wordpress.org/",
+            "homepage": "https://wordpress.org/",
             "keywords": [
                 "blog",
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-12-18T22:32:15+00:00"
+            "time": "2020-03-31T20:17:13+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -399,12 +403,10 @@
         },
         {
             "name": "koodimonni-language/core-nl_be",
-            "version": "5.3.2",
+            "version": "5.4",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.3.2/nl_BE.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/translation/core/5.4/nl_BE.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -463,20 +465,20 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959"
+                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959",
-                "reference": "77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
+                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9 || ^7.0"
+                "php": "^5.5.9 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.3",
@@ -514,7 +516,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-12-15T19:35:24+00:00"
+            "time": "2020-03-21T18:07:53+00:00"
         },
         {
             "name": "roots/wp-stage-switcher",
@@ -560,16 +562,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.14.0",
+            "version": "v1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38"
+                "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
-                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
+                "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
                 "shasum": ""
             },
             "require": {
@@ -581,7 +583,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -614,20 +616,34 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2020-01-13T11:15:53+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-02-27T09:26:54+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.6.1",
+            "version": "v3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "8f7961f7b9deb3b432452c18093cf16f88205902"
+                "reference": "786a947e57086cf236cefdee80784634224b99fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8f7961f7b9deb3b432452c18093cf16f88205902",
-                "reference": "8f7961f7b9deb3b432452c18093cf16f88205902",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/786a947e57086cf236cefdee80784634224b99fa",
+                "reference": "786a947e57086cf236cefdee80784634224b99fa",
                 "shasum": ""
             },
             "require": {
@@ -637,10 +653,12 @@
             },
             "require-dev": {
                 "ext-filter": "*",
+                "ext-pcre": "*",
                 "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
             },
             "suggest": {
-                "ext-filter": "Required to use the boolean validator."
+                "ext-filter": "Required to use the boolean validator.",
+                "ext-pcre": "Required to use most of the library."
             },
             "type": "library",
             "extra": {
@@ -675,7 +693,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2020-03-12T13:44:00+00:00"
+            "time": "2020-03-27T23:36:02+00:00"
         },
         {
             "name": "wpackagist-plugin/acf-gravityforms-add-on",
@@ -687,9 +705,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/acf-gravityforms-add-on.1.2.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/acf-gravityforms-add-on.1.2.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -707,9 +723,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookiebot.3.6.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/cookiebot.3.6.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -719,7 +733,7 @@
         },
         {
             "name": "wpackagist-plugin/postmark-approved-wordpress-plugin",
-            "version": "1.11.6",
+            "version": "1.12.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/postmark-approved-wordpress-plugin/",
@@ -727,9 +741,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/postmark-approved-wordpress-plugin.zip?timestamp=1584463003",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/postmark-approved-wordpress-plugin.zip?timestamp=1586214800"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -747,9 +759,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/shortpixel-adaptive-images.1.8.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/shortpixel-adaptive-images.1.8.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -767,9 +777,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.7.4.6.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.4.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -779,17 +787,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-optimize",
-            "version": "3.0.16",
+            "version": "3.0.19",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-optimize/",
-                "reference": "tags/3.0.16"
+                "reference": "tags/3.0.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-optimize.3.0.16.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-optimize.3.0.19.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -799,17 +805,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-seopress",
-            "version": "3.8.3",
+            "version": "3.8.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-seopress/",
-                "reference": "tags/3.8.3"
+                "reference": "tags/3.8.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-seopress.3.8.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-seopress.3.8.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -819,17 +823,15 @@
         },
         {
             "name": "wpackagist-theme/twentytwenty",
-            "version": "1.1",
+            "version": "1.2",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentytwenty/",
-                "reference": "1.1"
+                "reference": "1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -845,5 +847,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

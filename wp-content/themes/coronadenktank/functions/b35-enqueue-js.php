@@ -39,5 +39,5 @@ function b35_isProduction() {
   if (defined('WP_ENV')) {
     return (WP_ENV == "production");
   }
-  return true;
+  return $_SERVER['SERVER_ADDR'] != "127.0.0.1";
 }

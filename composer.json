@@ -27,12 +27,13 @@
 		"johnpbloch/wordpress-core-installer": "^0.2.0",
 		"johnpbloch/wordpress-core": "^5",
 		"koodimonni-language/core-nl_be": "*",
-		"appsaloon/understrap": "^0.9.4"
+		"appsaloon/understrap": "^0.9.4",
+		"bramesposito/bootstrap-core-blocks": "^1.0"
 	},
 	"authors": [
 		{
-			"name": "You?? - AppSaloon",
-			"email": "you@appsaloon.be"
+			"name": "Bram Esposito",
+			"email": "bram@bramesposito.com"
 		},{
 			"name": "Kim Vanrijckel - AppSaloon",
 			"email": "kim@appsaloon.be"
@@ -54,6 +55,10 @@
 		{
 			"type": "composer",
 			"url": "https://wp-languages.github.io"
+		},
+		{
+			"url": "https://github.com/bramesposito/bootstrap-core-blocks.git",
+			"type": "git"
 		}
 	],
 	"extra": {

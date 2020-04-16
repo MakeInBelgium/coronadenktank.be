@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "722902b3ad30d3179df0ca390a3f0a4e",
+    "content-hash": "6c7cc963bb3be68105470d3e765bb61f",
     "packages": [
         {
             "name": "appsaloon/advanced-custom-fields-pro",
@@ -175,6 +175,27 @@
             },
             "description": "The PRO version of SEOPress. SEOPress required (free).",
             "homepage": "https://www.seopress.org/seopress-pro/"
+        },
+        {
+            "name": "bramesposito/bootstrap-core-blocks",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bramesposito/bootstrap-core-blocks.git",
+                "reference": "f5836fbb515f5bbc9c0f3d563243d7f7d40cf922"
+            },
+            "type": "library",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Bram Esposito",
+                    "email": "bram@bramesposito.com"
+                }
+            ],
+            "description": "Alter Wordpress Gutenberg blocks so they can be used with Bootstrap",
+            "time": "2020-04-15T12:25:23+00:00"
         },
         {
             "name": "composer/installers",

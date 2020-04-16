@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/coronadenktank\n"
-"POT-Creation-Date: 2020-03-26T09:40:54+00:00\n"
-"PO-Revision-Date: 2020-03-26 12:19+0100\n"
+"POT-Creation-Date: 2020-04-13T20:47:08+00:00\n"
+"PO-Revision-Date: 2020-04-13 22:48+0200\n"
 "Last-Translator: Bram Esposito <bram@bramesposito.com>\n"
 "Language-Team: \n"
 "Language: nl_BE\n"
@@ -39,11 +39,6 @@ msgstr ""
 msgid "all initiatives"
 msgstr "alle initiatieven"
 
-#: functions/b35-ajax.php:32
-#: template-parts/blocks/initiatives/initiatives.php:95
-msgid "Read more"
-msgstr "Lees meer"
-
 #: functions/b35-gutenberg-colors.php:8
 msgid "Purple Heart"
 msgstr ""
@@ -64,6 +59,14 @@ msgstr ""
 msgid "Catskill White"
 msgstr ""
 
+#: functions/b35-load-translations.php:3
+msgid "Initiatives"
+msgstr "Initiatieven"
+
+#: functions/b35-load-translations.php:4
+msgid "initiative"
+msgstr "initiatief"
+
 #: functions/b35-menus.php:4
 msgid "Supporting navigation"
 msgstr ""
@@ -71,3 +74,7 @@ msgstr ""
 #: functions/b35-menus.php:5
 msgid "Primary Menu"
 msgstr ""
+
+#: theme-helpers/initiative-helpers.php:28
+msgid "Read more"
+msgstr "Lees meer"

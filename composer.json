@@ -57,8 +57,8 @@
 			"url": "https://wp-languages.github.io"
 		},
 		{
-			"url": "https://github.com/bramesposito/bootstrap-core-blocks.git",
-			"type": "git"
+			"type": "vcs",
+			"url": "git@github.com:BramEsposito/bootstrap-core-blocks.git"
 		}
 	],
 	"extra": {

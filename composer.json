@@ -75,7 +75,8 @@
 				"type:wordpress-muplugin"
 			],
 			"wp-content/plugins/{$name}/": [
-				"type:wordpress-plugin"
+				"type:wordpress-plugin",
+				"vendor:bramesposito"
 			]
 		},
 		"wordpress-install-dir": "core"

@@ -46,8 +46,6 @@ require_once(get_stylesheet_directory()."/functions/b35-acf-blocks.php");
 require_once(get_stylesheet_directory()."/functions/b35-load-translations.php");
 require_once(get_stylesheet_directory()."/functions/b35-rendertemplate.php");
 require_once(get_stylesheet_directory()."/functions/b35-ajax.php");
-require_once(get_stylesheet_directory()."/functions/b35-widget-classes.php");
-require_once(get_stylesheet_directory()."/functions/b35-gutenstrap.php");
 
 // Helpers specific for this theme
 require_once(get_stylesheet_directory()."/theme-helpers/initiative-helpers.php");

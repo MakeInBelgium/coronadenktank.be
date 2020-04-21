@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "445ce092bc27d0d01525c11ea683fc22",
+    "content-hash": "3084e0497affe154e088c0058d264a3a",
     "packages": [
         {
             "name": "appsaloon/advanced-custom-fields-pro",
@@ -12,7 +12,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/advanced-custom-fields-pro/5.8.9",
-                "reference": null,
                 "shasum": "397de087e8dc7675cb5f5aa8a3723ec4957c6b3e"
             },
             "require": {
@@ -32,7 +31,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/appsaloon-wp-tools/2.0.6",
-                "reference": null,
                 "shasum": "2779769e7628630a4b41e958e2ce0ead26ad5b3a"
             },
             "require": {
@@ -51,7 +49,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/custom-post-type-ui/1.7.4",
-                "reference": null,
                 "shasum": "7f6d4c574c22db57139d2e96d0a3389b4bb9373a"
             },
             "require": {
@@ -71,7 +68,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/gravityforms/2.4.17.7",
-                "reference": null,
                 "shasum": "323a157673e4d436349a11f3f923ade7cafd343d"
             },
             "require": {
@@ -86,12 +82,30 @@
             "homepage": "https://www.gravityforms.com"
         },
         {
+            "name": "appsaloon/gravityformsslack",
+            "version": "1.9",
+            "dist": {
+                "type": "zip",
+                "url": "https://plugins.appsaloon.be/satispress/gravityformsslack/1.9",
+                "shasum": "3e22ad0060389cdda11e61df791e47055e70c89b"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "rocketgenius",
+                "homepage": "https://www.rocketgenius.com"
+            },
+            "description": "Integrates Gravity Forms with Slack, allowing alerts for Gravity Forms activity to be posted to your Slack channels.",
+            "homepage": "https://www.gravityforms.com"
+        },
+        {
             "name": "appsaloon/understrap",
             "version": "0.9.4",
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/understrap/0.9.4",
-                "reference": null,
                 "shasum": "2a65a7b9e182673b1e8e2f88be22d935c77bfa71"
             },
             "require": {
@@ -111,7 +125,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/wp-migrate-db-pro/1.9.10",
-                "reference": null,
                 "shasum": "c888ad359dc083b5480cffaa3d77d94a1a4d3f44"
             },
             "require": {
@@ -131,7 +144,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/wp-migrate-db-pro-media-files/1.4.15",
-                "reference": null,
                 "shasum": "c8621e98cb1ca573c85953c0479b575137a41160"
             },
             "require": {
@@ -151,7 +163,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/wp-rocket/3.5.1",
-                "reference": null,
                 "shasum": "031a38ec57d3edd5021613d8aca0e68c4108d52e"
             },
             "require": {
@@ -171,7 +182,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://plugins.appsaloon.be/satispress/wp-seopress-pro/3.8.4",
-                "reference": null,
                 "shasum": "2e41676daf4bef518cde60774049ff5f41ffb8a7"
             },
             "require": {
@@ -341,6 +351,16 @@
                 "zend",
                 "zikula"
             ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-07T06:57:05+00:00"
         },
         {
@@ -436,9 +456,7 @@
             "version": "5.4",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.4/nl_BE.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/translation/core/5.4/nl_BE.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -648,6 +666,20 @@
                 "polyfill",
                 "portable"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-02-27T09:26:54+00:00"
         },
         {
@@ -723,9 +755,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/acf-gravityforms-add-on.1.2.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/acf-gravityforms-add-on.1.2.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -743,9 +773,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookiebot.3.6.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/cookiebot.3.6.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -763,9 +791,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/postmark-approved-wordpress-plugin.zip?timestamp=1586214800",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/postmark-approved-wordpress-plugin.zip?timestamp=1586214800"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -783,9 +809,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/shortpixel-adaptive-images.1.8.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/shortpixel-adaptive-images.1.8.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -803,9 +827,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.7.4.6.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.4.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -823,9 +845,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-optimize.3.0.19.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-optimize.3.0.19.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -843,9 +863,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-seopress.3.8.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-seopress.3.8.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -863,9 +881,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -881,5 +897,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

@@ -29,7 +29,8 @@
 		"koodimonni-language/core-nl_be": "*",
 		"appsaloon/understrap": "^0.9.4",
 		"bramesposito/bootstrap-core-blocks": "^1.0",
-		"appsaloon/gravityformsslack": "^1.9"
+		"appsaloon/gravityformsslack": "^1.9",
+		"wpackagist-plugin/cookie-law-info": "^1.8"
 	},
 	"authors": [
 		{

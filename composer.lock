@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3084e0497affe154e088c0058d264a3a",
+    "content-hash": "48c6fa36c5cb9d30ef5b1e708532d0ad",
     "packages": [
         {
             "name": "appsaloon/advanced-custom-fields-pro",
@@ -762,6 +762,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/acf-gravityforms-add-on/"
+        },
+        {
+            "name": "wpackagist-plugin/cookie-law-info",
+            "version": "1.8.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cookie-law-info/",
+                "reference": "tags/1.8.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.1.8.7.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cookie-law-info/"
         },
         {
             "name": "wpackagist-plugin/cookiebot",

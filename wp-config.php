@@ -13,6 +13,8 @@ ini_set( 'display_errors', 0 );
 // =======================================================
 // $envs is needed for the wp-stage-switcher
 
+
+
 $envs = [
     'local'       => getenv('URL_LOCAL'),
     'staging'     => getenv('URL_STAGING'),
@@ -33,8 +35,12 @@ define('WP_DEBUG_LOG', getenv('WP_DEBUG_LOG') );
 define('DISALLOW_FILE_EDIT', getenv('DISALLOW_FILE_EDIT') );
 define('AUTOMATIC_UPDATER_DISABLED', getenv('AUTOMATIC_UPDATER_DISABLED') );
 define('CLIENT_WORKS_ON', getenv( 'CLIENT_WORKS_ON' ) );
-define( 'WP_REDIS_DISABLED', getenv( 'WP_REDIS_DISABLED' ) );
+define('WP_REDIS_DISABLED', getenv( 'WP_REDIS_DISABLED' ) );
+define('WP_REDIS_MAXTTL', getenv('WP_REDIS_MAXTTL') );
 define( 'ASWPT_DOCROOT', __DIR__ );
+
+// Tag from boilerplate start
+define('MDP_VERSION', '1.0.10');
 
 // =======================================================
 // Settings for local environment only
@@ -44,6 +50,8 @@ if ( getenv('ENVIRONMENT') == 'local') {
     define('DISALLOW_FILE_MODS', 0 );
     // Allow all file types
     define('ALLOW_UNFILTERED_UPLOADS', true);
+    // autosave interval of 1 day, in local development, you don't want autosave to be newer than the save while working
+    define('AUTOSAVE_INTERVAL', 86400);
 } else {
     define('DISALLOW_FILE_MODS', getenv('DISALLOW_FILE_MODS') );
 }
@@ -66,12 +74,12 @@ define( 'DB_COLLATE', '' );
 // =======================================================
 
 if( file_exists( __DIR__ . '/salts.php' ) ) {
-	require_once __DIR__ . '/salts.php';
-	if( ! defined( 'AUTH_KEY' ) || strlen( AUTH_KEY ) == 0 || AUTH_KEY == 'a value' ) {
-		echo 'This recipe needs some salt'; die;
-	}
+    require_once __DIR__ . '/salts.php';
+    if( ! defined( 'AUTH_KEY' ) || strlen( AUTH_KEY ) == 0 || AUTH_KEY == 'a value' ) {
+        echo 'This recipe needs some salt'; die;
+    }
 } else {
-	echo 'This recipe needs some salt'; die;
+    echo 'This recipe needs some salt'; die;
 }
 
 // ========================
@@ -91,14 +99,14 @@ define('DISABLE_WP_CRON', true );
 // Inserted by Local by Flywheel
 // ====================================================
 if (isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) {
-	$_SERVER['HTTPS'] = 'on';
+    $_SERVER['HTTPS'] = 'on';
 }
 
 // ====================================================
 // Absolute path to the WordPress directory
 // ====================================================
 if ( ! defined( 'ABSPATH' ) )
-	define( 'ABSPATH', dirname( __FILE__ ) . '/core' );
+    define( 'ABSPATH', dirname( __FILE__ ) . '/core' );
 
 // ====================================================
 // Sets up WordPress vars and included files

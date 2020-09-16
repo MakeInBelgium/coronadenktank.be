@@ -11,7 +11,7 @@
 		"appsaloon/wp-rocket": "^3.1",
 		"appsaloon/wp-seopress-pro": "^3",
 
-		"wpackagist-plugin/shortpixel-adaptive-images": "^1",
+		"wpackagist-plugin/shortpixel-adaptive-images": "^2",
 		"wpackagist-plugin/cookiebot": "*",
 		"wpackagist-plugin/wp-optimize": "*",
 		"wpackagist-plugin/postmark-approved-wordpress-plugin": "^1.11",

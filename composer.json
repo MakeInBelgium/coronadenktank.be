@@ -16,7 +16,7 @@
 		"wpackagist-plugin/wp-optimize": "*",
 		"wpackagist-plugin/postmark-approved-wordpress-plugin": "^1.11",
 		"wpackagist-plugin/acf-gravityforms-add-on": "^1.2",
-		"wpackagist-plugin/wp-seopress":"^3.0",
+		"wpackagist-plugin/wp-seopress":"*",
 
 		"appsaloon/appsaloon-wp-tools": "*",
 		"wpackagist-theme/twentytwenty": "*",
@@ -30,7 +30,7 @@
 		"appsaloon/understrap": "^0.9.4",
 		"bramesposito/bootstrap-core-blocks": "^1.0",
 		"appsaloon/gravityformsslack": "^1.9",
-		"wpackagist-plugin/cookie-law-info": "^1.8"
+		"wpackagist-plugin/cookie-law-info": "*"
 	},
 	"authors": [
 		{

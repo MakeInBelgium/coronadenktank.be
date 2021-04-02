@@ -7,7 +7,6 @@ core/
 salts.php
 wp-content/debug.log
 wp-content/uploads/*
-wp-content/languages/*
 wp-content/plugins/*
 wp-content/mu-plugins/
 */*/*/node_modules
